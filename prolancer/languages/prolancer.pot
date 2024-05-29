@@ -1,0 +1,1724 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: ProLancer\n"
+"POT-Creation-Date: 2023-09-09 12:09+0600\n"
+"PO-Revision-Date: 2023-09-09 12:08+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:11
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:12 inc/redux-framework.php:1370
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: 404.php:22
+msgid "Go to Home"
+msgstr ""
+
+#: archive.php:61 index.php:66 search.php:66
+msgid "&#10094; Prev"
+msgstr ""
+
+#: archive.php:62 index.php:67 search.php:67
+msgid "Next &#10095;"
+msgstr ""
+
+#: comments.php:19
+#, php-format
+msgid "One comment on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#: comments.php:24
+#, php-format
+msgctxt "comments title"
+msgid "%1$s comments"
+msgid_plural "%1$s comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:51
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:62
+msgid "Post Comment"
+msgstr ""
+
+#: comments.php:63
+msgid "Leave a Reply"
+msgstr ""
+
+#: comments.php:68
+msgid "Type your comment...."
+msgstr ""
+
+#: comments.php:74
+msgid "Type your name...."
+msgstr ""
+
+#: comments.php:79
+msgid "Type your email...."
+msgstr ""
+
+#: footer.php:58
+msgid "Copyright"
+msgstr ""
+
+#: footer.php:58
+msgid " All Rights Reserved."
+msgstr ""
+
+#: footer.php:100
+msgid "Don't show this message again"
+msgstr ""
+
+#: functions.php:20
+msgid "Primary"
+msgstr ""
+
+#: functions.php:21
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:66
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:68 functions.php:78 functions.php:88 functions.php:98
+#: functions.php:108 functions.php:118 functions.php:128
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:76
+msgid "Project archive sidebar"
+msgstr ""
+
+#: functions.php:86
+msgid "Service archive sidebar"
+msgstr ""
+
+#: functions.php:96
+msgid "Buyer archive sidebar"
+msgstr ""
+
+#: functions.php:106
+msgid "Buyer Sidebar"
+msgstr ""
+
+#: functions.php:116
+msgid "Seller archive sidebar"
+msgstr ""
+
+#: functions.php:126
+msgid "Seller Sidebar"
+msgstr ""
+
+#. translators: If there are characters in your language that are not supported
+#. by Rubik, translate this to 'off'. Do not translate into your own language.
+#.
+#: functions.php:148
+msgctxt "Rubik font: on or off"
+msgid "on"
+msgstr ""
+
+#: functions.php:230
+msgid "Redux Framework"
+msgstr ""
+
+#: functions.php:236
+msgid "Elementor"
+msgstr ""
+
+#: functions.php:242
+msgid "WooCommerce"
+msgstr ""
+
+#: functions.php:248
+msgid "CMB2"
+msgstr ""
+
+#: functions.php:254
+msgid "Classic Widgets"
+msgstr ""
+
+#: functions.php:260
+msgid "ProLancer Element (licence required)"
+msgstr ""
+
+#: functions.php:267
+msgid "Contact Form 7"
+msgstr ""
+
+#: functions.php:273
+msgid "Mailchimp"
+msgstr ""
+
+#: functions.php:279
+msgid "One Click Demo Import"
+msgstr ""
+
+#: functions.php:285
+msgid "Envato Market"
+msgstr ""
+
+#: functions.php:312
+msgid "Default"
+msgstr ""
+
+#: functions.php:323
+msgid ""
+"After you import this demo, you will have to set up the menu URLs separately."
+msgstr ""
+
+#: functions.php:445
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: header.php:50
+msgid "Skip to content"
+msgstr ""
+
+#: header.php:68
+msgctxt "placeholder"
+msgid "Find Services"
+msgstr ""
+
+#: header.php:136
+msgid "Visit as Seller"
+msgstr ""
+
+#: header.php:137
+msgid "Visit as Buyer"
+msgstr ""
+
+#: header.php:139
+msgid "Logout"
+msgstr ""
+
+#: header.php:145
+msgid "Log In to Your Account"
+msgstr ""
+
+#: header.php:147
+msgid "Register"
+msgstr ""
+
+#: header.php:150
+msgid "Lost password"
+msgstr ""
+
+#: inc/activate-license.php:5 inc/activate-license.php:13
+#: inc/activate-license.php:106
+msgid "Activate License"
+msgstr ""
+
+#: inc/activate-license.php:16
+msgid "Please visit the"
+msgstr ""
+
+#: inc/activate-license.php:17
+msgid "Where Is My Purchase Code?"
+msgstr ""
+
+#: inc/activate-license.php:18
+msgid "documentation page for full setup instructions."
+msgstr ""
+
+#: inc/activate-license.php:40
+msgid "License Settings"
+msgstr ""
+
+#: inc/activate-license.php:43
+msgid "Please enter your purchase code"
+msgstr ""
+
+#: inc/activate-license.php:46
+msgid "Purchase Code"
+msgstr ""
+
+#: inc/activate-license.php:84
+msgid "( Not activated! )"
+msgstr ""
+
+#: inc/activate-license.php:85
+#, php-format
+msgid "Enter your purchase code (e.g %s)."
+msgstr ""
+
+#: inc/activate-license.php:87
+msgid "See how to get your purchase code"
+msgstr ""
+
+#: inc/activate-license.php:105
+msgid ""
+"This theme requires license key to install core plugin, auto update and one "
+"click demo import."
+msgstr ""
+
+#: inc/activate-license.php:107
+msgid "Get Your Purchase Code"
+msgstr ""
+
+#: inc/breadcrumb.php:281
+msgid "Browse:"
+msgstr ""
+
+#: inc/breadcrumb.php:282
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/breadcrumb.php:283
+msgid "Home"
+msgstr ""
+
+#: inc/breadcrumb.php:284
+msgid "404 Not Found"
+msgstr ""
+
+#: inc/breadcrumb.php:285
+msgid "Archives"
+msgstr ""
+
+#: inc/breadcrumb.php:287
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#: inc/breadcrumb.php:289
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/breadcrumb.php:291
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#: inc/breadcrumb.php:293
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#: inc/breadcrumb.php:295
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: inc/breadcrumb.php:755
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: inc/breadcrumb.php:772
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: inc/breadcrumb.php:789
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: inc/breadcrumb.php:805 inc/breadcrumb.php:834 inc/breadcrumb.php:861
+#: inc/breadcrumb.php:888 inc/breadcrumb.php:1228
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/breadcrumb.php:806 inc/breadcrumb.php:862 inc/breadcrumb.php:1232
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: inc/breadcrumb.php:807 inc/breadcrumb.php:1236
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: inc/breadcrumb.php:835
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: inc/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name(s).
+#: inc/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:393
+#: inc/class-tgm-plugin-activation.php:912
+#: inc/class-tgm-plugin-activation.php:2618
+#: inc/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:394
+#: inc/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:395
+#: inc/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#. translators: 1: dashboard link.
+#: inc/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1019
+#: inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:1206
+#: inc/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#. translators: %s: version number
+#: inc/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#. translators: 1: install status, 2: update status
+#: inc/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: 1: number of plugins.
+#: inc/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: inc/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#. translators: %2$s: plugin name in screen reader markup
+#: inc/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#. translators: 1: plugin name, 2: error message.
+#: inc/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3594
+#: inc/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3594
+#: inc/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#. translators: 1: plugin name.
+#: inc/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: inc/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#. translators: 1: plugin name, 2: action number 3: total number of actions.
+#: inc/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: inc/redux-framework.php:16 inc/redux-framework.php:17
+msgid "ProLancer Opt"
+msgstr ""
+
+#: inc/redux-framework.php:110
+msgid "General"
+msgstr ""
+
+#: inc/redux-framework.php:112
+msgid "General theme options."
+msgstr ""
+
+#: inc/redux-framework.php:118
+msgid "Preloader"
+msgstr ""
+
+#: inc/redux-framework.php:124
+msgid "Send email on new registration"
+msgstr ""
+
+#: inc/redux-framework.php:130
+msgid "New user registration subject"
+msgstr ""
+
+#: inc/redux-framework.php:131
+msgid "New user registred on your website"
+msgstr ""
+
+#: inc/redux-framework.php:137
+msgid "New user registration content"
+msgstr ""
+
+#: inc/redux-framework.php:139
+msgid "{{site_name}},{{full_name}},{{email}} will be translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:148
+msgid "Send password to user's email when sign up"
+msgstr ""
+
+#: inc/redux-framework.php:153
+msgid "Full Width Header"
+msgstr ""
+
+#: inc/redux-framework.php:154
+msgid "Controls the width of the header area. "
+msgstr ""
+
+#: inc/redux-framework.php:160
+msgid "Service Fee %"
+msgstr ""
+
+#: inc/redux-framework.php:166
+msgid "Deposit Fee %"
+msgstr ""
+
+#: inc/redux-framework.php:172
+msgid "Project featuring fee "
+msgstr ""
+
+#: inc/redux-framework.php:178
+msgid "Service featuring fee "
+msgstr ""
+
+#: inc/redux-framework.php:186
+msgid "Style"
+msgstr ""
+
+#: inc/redux-framework.php:188 inc/redux-framework.php:290
+msgid "Header menu options."
+msgstr ""
+
+#: inc/redux-framework.php:194
+msgid "Primary Color"
+msgstr ""
+
+#: inc/redux-framework.php:201
+msgid "Random Color 1"
+msgstr ""
+
+#: inc/redux-framework.php:208
+msgid "Random Color 2"
+msgstr ""
+
+#: inc/redux-framework.php:215
+msgid "Random Color 3"
+msgstr ""
+
+#: inc/redux-framework.php:222
+msgid "Random Color 4"
+msgstr ""
+
+#: inc/redux-framework.php:229
+msgid "Random Color 5"
+msgstr ""
+
+#: inc/redux-framework.php:236
+msgid "Random Color 6"
+msgstr ""
+
+#: inc/redux-framework.php:245 inc/redux-framework.php:268
+msgid "Typography"
+msgstr ""
+
+#: inc/redux-framework.php:252
+msgid "Heading Typography"
+msgstr ""
+
+#: inc/redux-framework.php:253
+msgid "H1, H2, H3,H4, H5, H6  Tags"
+msgstr ""
+
+#: inc/redux-framework.php:269
+msgid "body, p Tags"
+msgstr ""
+
+#: inc/redux-framework.php:288
+msgid "Header"
+msgstr ""
+
+#: inc/redux-framework.php:299
+msgid "Logo Dimensions"
+msgstr ""
+
+#: inc/redux-framework.php:305
+msgid "Alternative Logo"
+msgstr ""
+
+#: inc/redux-framework.php:310
+msgid "Header Style"
+msgstr ""
+
+#: inc/redux-framework.php:312
+msgid "Style one"
+msgstr ""
+
+#: inc/redux-framework.php:313
+msgid "Style two"
+msgstr ""
+
+#: inc/redux-framework.php:320
+msgid "Login and Register Page"
+msgstr ""
+
+#: inc/redux-framework.php:326
+msgid "Sticky Header"
+msgstr ""
+
+#: inc/redux-framework.php:327
+msgid "Turn on to activate the sticky header."
+msgstr ""
+
+#: inc/redux-framework.php:333
+msgid "Navbar button"
+msgstr ""
+
+#: inc/redux-framework.php:339
+msgid "Navbar button text"
+msgstr ""
+
+#: inc/redux-framework.php:340
+msgid "Dashboard"
+msgstr ""
+
+#: inc/redux-framework.php:348
+msgid "Breadcrumbs"
+msgstr ""
+
+#: inc/redux-framework.php:349
+msgid "Set breadcrumbs background with image, color"
+msgstr ""
+
+#: inc/redux-framework.php:359
+msgid "Projects"
+msgstr ""
+
+#: inc/redux-framework.php:366
+msgid "Project per page"
+msgstr ""
+
+#: inc/redux-framework.php:376
+msgid "Project Navigation (Next/Previous)"
+msgstr ""
+
+#: inc/redux-framework.php:382 inc/redux-framework.php:639
+#: inc/redux-framework.php:828 inc/redux-framework.php:867
+#: inc/redux-framework.php:907
+msgid "Layout"
+msgstr ""
+
+#: inc/redux-framework.php:402
+msgid "Project Auto Approval"
+msgstr ""
+
+#: inc/redux-framework.php:408
+msgid "Send email on project creation"
+msgstr ""
+
+#: inc/redux-framework.php:414
+msgid "The buyer has submitted a project"
+msgstr ""
+
+#: inc/redux-framework.php:415
+msgid "Your project has been created"
+msgstr ""
+
+#: inc/redux-framework.php:421
+msgid "Project creation content"
+msgstr ""
+
+#: inc/redux-framework.php:423 inc/redux-framework.php:447
+msgid ""
+"{{buyer_name}},{{display_name}},{{project_link}},{{project_title}} will be "
+"translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:432
+msgid "Send email on project approval"
+msgstr ""
+
+#: inc/redux-framework.php:438
+msgid "Project approval subject"
+msgstr ""
+
+#: inc/redux-framework.php:439
+msgid "Your project has been approved"
+msgstr ""
+
+#: inc/redux-framework.php:445
+msgid "Project approval content"
+msgstr ""
+
+#: inc/redux-framework.php:456
+msgid "Send email on project proposal"
+msgstr ""
+
+#: inc/redux-framework.php:462
+msgid "Project proposal subject"
+msgstr ""
+
+#: inc/redux-framework.php:463
+msgid "You Got a New Proposal"
+msgstr ""
+
+#: inc/redux-framework.php:469
+msgid "Project proposal content"
+msgstr ""
+
+#: inc/redux-framework.php:471 inc/redux-framework.php:495
+#: inc/redux-framework.php:519 inc/redux-framework.php:543
+#: inc/redux-framework.php:567
+msgid ""
+"{{site_name}},{{buyer_name}},{{seller_name}},{{project_link}},"
+"{{project_title}} will be translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:480
+msgid "Send email on proposal cancel"
+msgstr ""
+
+#: inc/redux-framework.php:486
+msgid "Proposal cancel subject"
+msgstr ""
+
+#: inc/redux-framework.php:487
+msgid "Your proposal has been canceled"
+msgstr ""
+
+#: inc/redux-framework.php:493
+msgid "Proposal cancel content"
+msgstr ""
+
+#: inc/redux-framework.php:504
+msgid "Send email on project assigned"
+msgstr ""
+
+#: inc/redux-framework.php:510
+msgid "Project assigned subject"
+msgstr ""
+
+#: inc/redux-framework.php:511
+msgid "Congratulations! You Got a New Project"
+msgstr ""
+
+#: inc/redux-framework.php:517
+msgid "Project assigned content"
+msgstr ""
+
+#: inc/redux-framework.php:528
+msgid "Send email on project completed"
+msgstr ""
+
+#: inc/redux-framework.php:534
+msgid "Project completed subject"
+msgstr ""
+
+#: inc/redux-framework.php:535
+msgid "You Have Completed a Project"
+msgstr ""
+
+#: inc/redux-framework.php:541
+msgid "Project completed content"
+msgstr ""
+
+#: inc/redux-framework.php:552
+msgid "Send email on project cancel"
+msgstr ""
+
+#: inc/redux-framework.php:558
+msgid "Project cancel subject"
+msgstr ""
+
+#: inc/redux-framework.php:559
+msgid "Your project has been canceled"
+msgstr ""
+
+#: inc/redux-framework.php:565
+msgid "Project cancel content"
+msgstr ""
+
+#: inc/redux-framework.php:576 inc/redux-framework.php:785
+msgid "Send email on sending messages"
+msgstr ""
+
+#: inc/redux-framework.php:582 inc/redux-framework.php:791
+msgid "Sending messages subject"
+msgstr ""
+
+#: inc/redux-framework.php:583 inc/redux-framework.php:792
+msgid "You have received a messages"
+msgstr ""
+
+#: inc/redux-framework.php:589 inc/redux-framework.php:798
+msgid "Sending messages content"
+msgstr ""
+
+#: inc/redux-framework.php:591 inc/redux-framework.php:800
+msgid ""
+"{{site_name}},{{receiver_name}},{{message_link}} will be translated "
+"accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:602
+msgid "Services"
+msgstr ""
+
+#: inc/redux-framework.php:609
+msgid "Service per page"
+msgstr ""
+
+#: inc/redux-framework.php:619
+msgid "Service Navigation (Next/Previous)"
+msgstr ""
+
+#: inc/redux-framework.php:625
+msgid "Package Variation"
+msgstr ""
+
+#: inc/redux-framework.php:634
+msgid "Package feature"
+msgstr ""
+
+#: inc/redux-framework.php:659
+msgid "Service Auto Approval"
+msgstr ""
+
+#: inc/redux-framework.php:665
+msgid "Send email on service creation"
+msgstr ""
+
+#: inc/redux-framework.php:671
+msgid "Service creation subject"
+msgstr ""
+
+#: inc/redux-framework.php:672
+msgid "Your service has been created"
+msgstr ""
+
+#: inc/redux-framework.php:678
+msgid "Service creation content"
+msgstr ""
+
+#: inc/redux-framework.php:680 inc/redux-framework.php:704
+msgid ""
+"{{site_name}},{{seller_name}},{{service_link}},{{service_title}} will be "
+"translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:689
+msgid "Send email on service approval"
+msgstr ""
+
+#: inc/redux-framework.php:695
+msgid "Service approval subject"
+msgstr ""
+
+#: inc/redux-framework.php:696
+msgid "Your service has been approved"
+msgstr ""
+
+#: inc/redux-framework.php:702
+msgid "Service approval content"
+msgstr ""
+
+#: inc/redux-framework.php:713
+msgid "Send email on order a service"
+msgstr ""
+
+#: inc/redux-framework.php:719
+msgid "Service order subject"
+msgstr ""
+
+#: inc/redux-framework.php:720
+msgid "You have just received an order"
+msgstr ""
+
+#: inc/redux-framework.php:726
+msgid "Service order content"
+msgstr ""
+
+#: inc/redux-framework.php:728 inc/redux-framework.php:752
+#: inc/redux-framework.php:776
+msgid ""
+"{{site_name}},{{seller_name}},{{buyer_name}},{{service_link}},"
+"{{service_title}} will be translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:737
+msgid "Send email on service completed"
+msgstr ""
+
+#: inc/redux-framework.php:743
+msgid "Service completed subject"
+msgstr ""
+
+#: inc/redux-framework.php:744
+msgid "You Have Completed a service"
+msgstr ""
+
+#: inc/redux-framework.php:750
+msgid "Service completed content"
+msgstr ""
+
+#: inc/redux-framework.php:761
+msgid "Send email on service cancel"
+msgstr ""
+
+#: inc/redux-framework.php:767
+msgid "Service cancel subject"
+msgstr ""
+
+#: inc/redux-framework.php:768
+msgid "Your order has been canceled"
+msgstr ""
+
+#: inc/redux-framework.php:774
+msgid "Service cancel content"
+msgstr ""
+
+#: inc/redux-framework.php:811
+msgid "Buyers"
+msgstr ""
+
+#: inc/redux-framework.php:818
+msgid "Buyer per page"
+msgstr ""
+
+#: inc/redux-framework.php:850
+msgid "Sellers"
+msgstr ""
+
+#: inc/redux-framework.php:857
+msgid "Sellers per page"
+msgstr ""
+
+#: inc/redux-framework.php:889
+msgid "Blog Page"
+msgstr ""
+
+#: inc/redux-framework.php:896
+msgid "Excerpt Length"
+msgstr ""
+
+#: inc/redux-framework.php:897
+msgid "Controls the excerpt length on blog page"
+msgstr ""
+
+#: inc/redux-framework.php:929
+msgid "Single Blog Page"
+msgstr ""
+
+#: inc/redux-framework.php:937
+msgid "Social Share"
+msgstr ""
+
+#: inc/redux-framework.php:943
+msgid "Post Navigation (Next/Previous)"
+msgstr ""
+
+#: inc/redux-framework.php:949
+msgid "Show Related Post"
+msgstr ""
+
+#: inc/redux-framework.php:955
+msgid "Related Post Title"
+msgstr ""
+
+#: inc/redux-framework.php:957
+msgid "Related Post"
+msgstr ""
+
+#: inc/redux-framework.php:962
+msgid "Related Posts"
+msgstr ""
+
+#: inc/redux-framework.php:963
+msgid "Related posts per page"
+msgstr ""
+
+#: inc/redux-framework.php:964
+msgid ""
+"Number of related posts to display. Min: 1, max: Unlimited, step: 1, default "
+"value: 4"
+msgstr ""
+
+#: inc/redux-framework.php:975
+msgid "Posts Column"
+msgstr ""
+
+#: inc/redux-framework.php:976
+msgid "Number of column"
+msgstr ""
+
+#: inc/redux-framework.php:977
+msgid "Specify the number of related posts column."
+msgstr ""
+
+#: inc/redux-framework.php:980
+msgid "One Column"
+msgstr ""
+
+#: inc/redux-framework.php:981
+msgid "Two Columns"
+msgstr ""
+
+#: inc/redux-framework.php:982
+msgid "Three Columns"
+msgstr ""
+
+#: inc/redux-framework.php:983
+msgid "Four Columns"
+msgstr ""
+
+#: inc/redux-framework.php:984
+msgid "Six Columns"
+msgstr ""
+
+#: inc/redux-framework.php:993
+msgid "Payout"
+msgstr ""
+
+#: inc/redux-framework.php:995
+msgid "Payout theme options."
+msgstr ""
+
+#: inc/redux-framework.php:1001
+msgid "Minimum Withdrow Threshold"
+msgstr ""
+
+#: inc/redux-framework.php:1007
+msgid "Send email on withdrawal money request by seller"
+msgstr ""
+
+#: inc/redux-framework.php:1013
+msgid "Withdrawal money request subject"
+msgstr ""
+
+#: inc/redux-framework.php:1014
+msgid "The user has request for withdrawal money"
+msgstr ""
+
+#: inc/redux-framework.php:1020
+msgid "Withdrawal money request content"
+msgstr ""
+
+#: inc/redux-framework.php:1022
+msgid ""
+"{{site_name}},{{username}},{{method}},{{withdrawal_amount}} will be "
+"translated accordingly."
+msgstr ""
+
+#: inc/redux-framework.php:1029
+msgid "Badges"
+msgstr ""
+
+#: inc/redux-framework.php:1031
+msgid "Badges for selers and buyers."
+msgstr ""
+
+#: inc/redux-framework.php:1037
+msgid "ID Verified"
+msgstr ""
+
+#: inc/redux-framework.php:1044
+msgid "ID Verified badge"
+msgstr ""
+
+#: inc/redux-framework.php:1050
+msgid "Buyer first order"
+msgstr ""
+
+#: inc/redux-framework.php:1057
+msgid "Buyer first order badge"
+msgstr ""
+
+#: inc/redux-framework.php:1063
+msgid "Seller first order received"
+msgstr ""
+
+#: inc/redux-framework.php:1070
+msgid "First order received badge"
+msgstr ""
+
+#: inc/redux-framework.php:1076
+msgid "New member"
+msgstr ""
+
+#: inc/redux-framework.php:1083
+msgid "New member badge"
+msgstr ""
+
+#: inc/redux-framework.php:1089
+msgid "Joining days less than"
+msgstr ""
+
+#: inc/redux-framework.php:1099 inc/redux-framework.php:1177
+msgid "Level 1"
+msgstr ""
+
+#: inc/redux-framework.php:1105
+msgid "Seller Level 1"
+msgstr ""
+
+#: inc/redux-framework.php:1112
+msgid "Seller Level 1 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1118
+msgid "Seller Level 1 total earnings"
+msgstr ""
+
+#: inc/redux-framework.php:1125 inc/redux-framework.php:1203
+msgid "Level 2"
+msgstr ""
+
+#: inc/redux-framework.php:1131
+msgid "Seller Level 2"
+msgstr ""
+
+#: inc/redux-framework.php:1138
+msgid "Seller Level 2 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1144
+msgid "Seller Level 2 total earnings"
+msgstr ""
+
+#: inc/redux-framework.php:1151 inc/redux-framework.php:1229
+msgid "Level 3"
+msgstr ""
+
+#: inc/redux-framework.php:1157
+msgid "Seller Level 3"
+msgstr ""
+
+#: inc/redux-framework.php:1164
+msgid "Seller Level 3 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1170
+msgid "Seller Level 3 total earnings"
+msgstr ""
+
+#: inc/redux-framework.php:1183
+msgid "Buyer Level 1"
+msgstr ""
+
+#: inc/redux-framework.php:1190
+msgid "Buyer Level 1 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1196
+msgid "Buyer Level 1 total spent"
+msgstr ""
+
+#: inc/redux-framework.php:1209
+msgid "Buyer Level 2"
+msgstr ""
+
+#: inc/redux-framework.php:1216
+msgid "Buyer Level 2 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1222
+msgid "Buyer Level 2 total spent"
+msgstr ""
+
+#: inc/redux-framework.php:1235
+msgid "Buyer Level 3"
+msgstr ""
+
+#: inc/redux-framework.php:1242
+msgid "Buyer Level 3 badge"
+msgstr ""
+
+#: inc/redux-framework.php:1248
+msgid "Buyer Level 3 total spent"
+msgstr ""
+
+#: inc/redux-framework.php:1257 inc/redux-framework.php:1264
+msgid "Newsletter Modal"
+msgstr ""
+
+#: inc/redux-framework.php:1270
+msgid "Modal image"
+msgstr ""
+
+#: inc/redux-framework.php:1277
+msgid "Modal title"
+msgstr ""
+
+#: inc/redux-framework.php:1278
+msgid "Subscribe And Get 30% Discount!"
+msgstr ""
+
+#: inc/redux-framework.php:1284
+msgid "Modal description"
+msgstr ""
+
+#: inc/redux-framework.php:1285
+msgid "Subscribe to our newsletter to get updates and big discount offer!."
+msgstr ""
+
+#: inc/redux-framework.php:1291
+msgid "Modal shortcode"
+msgstr ""
+
+#: inc/redux-framework.php:1298
+msgid "Modal timeout"
+msgstr ""
+
+#: inc/redux-framework.php:1308
+msgid "Footer"
+msgstr ""
+
+#: inc/redux-framework.php:1315
+msgid "Footer widget display"
+msgstr ""
+
+#: inc/redux-framework.php:1321
+msgid "Footer template"
+msgstr ""
+
+#: inc/redux-framework.php:1323
+msgid "To set a footer template click "
+msgstr ""
+
+#: inc/redux-framework.php:1323
+msgid "Here"
+msgstr ""
+
+#: inc/redux-framework.php:1329
+msgid "Back to top"
+msgstr ""
+
+#: inc/redux-framework.php:1335
+msgid "Copyright text"
+msgstr ""
+
+#: inc/redux-framework.php:1336
+msgid ""
+"Enter your company information here. HTML tags allowed: a, br, em, strong"
+msgstr ""
+
+#: inc/redux-framework.php:1337
+msgid "Copyright © 2022 prolancer All Rights Reserved."
+msgstr ""
+
+#: inc/redux-framework.php:1347
+msgid "Supported currency"
+msgstr ""
+
+#: inc/redux-framework.php:1348
+msgid "Unlimited currency with drag and drop sortings."
+msgstr ""
+
+#: inc/redux-framework.php:1355
+msgid "404 Error"
+msgstr ""
+
+#: inc/redux-framework.php:1362
+msgid "Error title"
+msgstr ""
+
+#: inc/redux-framework.php:1363
+msgid "Oops! That page can’t be found."
+msgstr ""
+
+#: inc/redux-framework.php:1368
+msgid "Error message"
+msgstr ""
+
+#: inc/redux-framework.php:1369
+msgid "Enter \"not found\" error message."
+msgstr ""
+
+#: single.php:33
+msgid "&#171; Previous Post"
+msgstr ""
+
+#: single.php:34
+msgid "Next Post &#187;"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:24 template-parts/content.php:66
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content.php:32 template-parts/content.php:104
+msgid "by"
+msgstr ""
+
+#: template-parts/content.php:35 template-parts/content.php:107
+#, php-format
+msgctxt "comments title"
+msgid "1 Comment"
+msgid_plural "%1$s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/content.php:46 template-parts/content.php:118
+msgid "Views"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:55
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:128
+msgid "Read More"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "ProLancer"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://themebing.com/wp/prolancer"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"“Prolancer” – is a Freelance Marketplace WordPress theme with all necessary "
+"powerful features in freelancing. It has been designed and developed on the "
+"requirements of people interested in building freelance marketplaces like "
+"Fiverr, Upwork, and freelancer.com"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "ThemeBing"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://themeforest.net/user/themebing"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Custom Page With Sidebar"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Custom page without breadcrumb"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Custom page without sidebar"
+msgstr ""
