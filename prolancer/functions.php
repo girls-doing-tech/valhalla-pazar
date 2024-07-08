@@ -550,11 +550,6 @@ function mycred_custom_order_completed( $order_id ) {
 add_action( 'woocommerce_order_status_completed', 'mycred_custom_order_completed' );
 
 
-///------------------> and this is hook for completed service and cancel
-
-
-// Add MyCred points when service is completed
-
 // end menel code for adding hoks for point for mycred
 
 
@@ -634,3 +629,76 @@ add_action('init', 'call_hourly_update_status');
 // 
 // menellllllllllll code
 // 
+//
+ add_filter('woocommerce_currency_symbol', 'remplacer_devise_tunisienne', 10, 2);
+function remplacer_devise_tunisienne( $symbole_devis, $devise ) {
+if( $devise == 'TND') $symbole_devis= 'TND'; 
+return $symbole_devis;
+}
+//////////////// show online ofline // Update online status on user login
+
+add_action('wp_cron', 'schedule_hourly_update');
+	// Update status_users column to 1 on user login
+	// 
+
+function update_status_users_on_login($user_login, $user) {
+    global $wpdb;
+    $wpdb->update(
+        'wp824_users', // Directly using the table name
+        array('user_status' => 1),
+        array('ID' => $user->ID)
+    );
+		$seller_id= get_user_meta( $user->ID, 'seller_id', true );
+	 update_post_meta( $seller_id, 'user_status', 1);
+  
+	
+}
+add_action('wp_login', 'update_status_users_on_login', 10, 2);
+
+// Update status_users column to 0 on user logout
+
+//add_action('wp_logout', 'update_status_users_on_logout');
+function update_status_users_on_logout() {
+    $user_id = get_current_user_id();
+    if ($user_id) {
+        global $wpdb;
+        $wpdb->update(
+            'wp824_users', // Directly using the table name
+            array('user_status' => 0),
+            array('ID' => $user_id)
+        );
+    }
+		$seller_id= get_user_meta( get_current_user_id(), 'seller_id', true );
+	 update_post_meta( $seller_id, 'user_status', 0);
+  
+}
+add_action('clear_auth_cookie', 'update_status_users_on_logout');
+function enqueue_gaming_fonts() {
+    wp_enqueue_style( 'google-fonts', 'https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap', false ); 
+}
+add_action( 'wp_enqueue_scripts', 'enqueue_gaming_fonts' );
+
+
+
+///////////////
+//
+//
+function custom_checkout_no_payment_methods_message() {
+    // The JavaScript to modify the message
+    $custom_js = "
+        document.addEventListener('DOMContentLoaded', function() {
+            var elements = document.getElementsByClassName('wc-block-checkout__no-payment-methods-notice');
+            for (var i = 0; i < elements.length; i++) {
+                if (elements[i].classList.contains('status-error')) {
+                    elements[i].innerHTML = 'There is no money in the wallet. Please recharge your wallet.';
+                }
+            }
+        });
+    ";
+
+    // Add the custom JavaScript to the checkout page
+    if (is_checkout()) {
+        wp_add_inline_script('wc-checkout', $custom_js);
+    }
+}
+add_action('wp_enqueue_scripts', 'custom_checkout_no_payment_methods_message');

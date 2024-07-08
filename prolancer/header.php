@@ -1,5 +1,4 @@
-<?php
-/**
+<!---------
  * The header for our theme
  *
  * This is the template that displays all of the <head> section and everything up until <div id="content">
@@ -7,9 +6,30 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
  * @package prolancer
- */
+ 
 
+/*code for notifications ---->
 
+<?php 
+$buyer_id = get_user_meta( get_current_user_id(), 'buyer_id' , true );
+$seller_id = get_user_meta( get_current_user_id(), 'seller_id' , true );
+$visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
+
+global $wpdb;
+$message_notification_query = "SELECT * FROM `prolancer_messages` WHERE `receiver_id` = '".get_current_user_id()."' ORDER BY timestamp DESC LIMIT 10";
+$message_notifications = $wpdb->get_results($message_notification_query, ARRAY_A);
+
+if($wpdb->get_var("SHOW TABLES LIKE 'prolancer_notifications'") == 'prolancer_notifications') {
+	if($visit_as == 'buyer'){
+		$notification_query = "SELECT * FROM `prolancer_notifications` WHERE `receiver_id` = ${buyer_id} AND `type` = 'other' ORDER BY timestamp DESC LIMIT 10";
+	} elseif($visit_as == 'seller') {
+		$notification_query = "SELECT * FROM `prolancer_notifications` WHERE `receiver_id` = ${seller_id} AND `type` = 'other' ORDER BY timestamp DESC LIMIT 10";
+	}
+	$notifications = $wpdb->get_results($notification_query, ARRAY_A);
+} ?>
+
+<!------------end code notifications------------>
+	 <?php
 global $prolancer_opt;
 
 $site_preloader = !empty( $prolancer_opt['site_preloader'] ) ? $prolancer_opt['site_preloader'] : '';
@@ -54,7 +74,7 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		    <div class="top-header"> 
 		        <div class="container<?php if( $prolancer_header_full_width == true ){ echo'-fluid'; } ?>">
 		            <div class="row">
-		                <div class="col-xl-2 col-lg-2 my-auto d-none d-lg-block">
+		                <div class="col-xl-1 col-lg-1 my-auto d-none d-lg-block">
 		                    <div class="logo">
 		                    <?php if (has_custom_logo()) {
 		                        the_custom_logo();
@@ -63,7 +83,34 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		                    <?php } ?>
 		                    </div>
 		                </div>
-		                <div class="col-xl-6 col-lg-6 offset-lg-1 my-auto d-none d-lg-block">
+						
+						<!------------>
+						 <div class="col-xl-7 col-lg-7 my-auto d-none d-lg-block">
+						 <div class="<?php if (function_exists('prolancer_get_page_url_by_template') & $header_style == 'style1' & $prolancer_navbar_button == true) { 
+	                		echo'col-xl-7 col-md-7'; 
+	                	} elseif(function_exists('prolancer_get_page_url_by_template') & $header_style == 'style1' & $prolancer_navbar_button !== true) { 
+	                		echo'col-xl-9 col-md-9'; 
+	                	} elseif(function_exists('prolancer_get_page_url_by_template') & $header_style == 'style2' & $prolancer_navbar_button == true) { 
+	                		echo'col-xl-10 col-md-10'; 
+	                	} elseif(function_exists('prolancer_get_page_url_by_template') & $header_style == 'style2' & $prolancer_navbar_button !== true) { 
+	                		echo'col-xl-12 col-md-12'; 
+	                	} else { 
+	                		echo'col-xl-12 col-md-12'; 
+	                	} ?> my-auto">
+	                    <div class="primary-menu d-none d-lg-inline-block">
+	                        <nav class="desktop-menu">
+	                            <?php
+	                                wp_nav_menu( array(
+	                                'theme_location'    => 'primary',
+	                                'depth'             => 3,
+	                                'container'         => 'ul',
+	                            ) ); ?>
+	                        </nav>                      
+	                    </div>
+	                </div>
+						  </div>
+						<!------<div class="col-xl-2 col-lg-2 offset-lg-1 my-auto d-none d-lg-block">------->
+		            <div class="col-xl-2 col-lg-2 my-auto d-none d-lg-block">
 		                    <form class="ajax-search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
 		                        <input type="text" name="s" id="keyword" placeholder="<?php echo esc_attr_x( 'Find Services', 'placeholder', 'prolancer' ); ?>" autocomplete="off">
 		                        <button type="submit"><i class="fal fa-search"></i></button>
@@ -71,15 +118,51 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		                    	<div id="datafetch"></div>
 		                    </form>
 		                </div>
-		                <div class="col-xl-2 col-lg-2 col my-auto">
-		                    <?php
-		                        wp_nav_menu( array(
-		                        'theme_location' => 'top-menu',
-		                        'depth'          => 1,
-		                        'container'      => 'ul',
-		                        'fallback_cb' => false
-		                    )); ?>
-		                </div>
+			
+						
+						
+						<!-----code notifications----->
+						 <div class="col-xl-1 col-lg-1 col my-auto">
+							<div class="notifications-widget">
+	                        <div class="notifications-button">
+	                        	<i class="fas fa-fw fa-bell-on"></i>
+	                        	<?php
+								if($notifications){
+									foreach ($notifications as $notification) {
+										if ($notification['read'] == false) {
+											echo '<span class="count"></span>';
+											break;
+										};
+									} 
+								}?>
+	                        </div>
+	                    	<?php if ($notifications) { ?>
+	                        <div class="notifications-content">
+	                    		<ul class="list-unstyled">
+	                    			<?php foreach ($notifications as $key => $notification) { ?>
+	                    				<li>
+	                    					<a href="<?php echo esc_url($notification['url']); ?>" data-id="<?php echo esc_attr($notification['id']); ?>" data-nonce="<?php echo wp_create_nonce( 'notification_clicked_nonce' ) ?>">
+	                    						<span class="d-flex">
+	                    							<span class="pr-20">
+	                    								<img src="<?php echo esc_url($notification['image']); ?>" alt="image">
+													</span>
+													<span>
+														<p><?php echo esc_html( $notification['title'] ); ?></p>
+														<small><?php echo esc_html( human_time_diff( strtotime( wp_date($notification['timestamp'])), current_time( 'timestamp' ))) . esc_html__( ' ago', 'prolancer' );?></small>
+	                    							</span>
+												<?php if ($notification['read'] == false) {?>
+													<i class="fas fa-circle"></i>
+												<?php } ?>   
+												</span>          					
+		                    				</a>
+	                    				</li>
+	                    			<?php } ?>	                        		
+	                        	</ul>                   	
+	                        </div>
+	                    	<?php } ?>
+	                    </div>
+							 </div>
+						<!---end code notifications ---->
 		                <div class="col-xl-1 col-lg-1 col my-auto">
 		                    <div class="top-header-action">
 		                        <div class="widget-header">
@@ -119,7 +202,8 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		                                    	echo get_avatar( wp_get_current_user()->ID, 50 );
 		                                    }
 		                                } else { ?>
-		                                    <img src="<?php echo get_template_directory_uri() . '/assets/images/avatar.png' ?>" alt="avatar">                                
+		                                   <!----image if not login make it login -->
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/avatar.png' ?>" alt="avatar">                                
 		                                <?php } ?>
 		                                </div>
 		                                <div class="my-account-content">
@@ -127,24 +211,49 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 
 		                                        <div class="header-profile">
 		                                            <div class="header-profile-content">
-		                                                <h6><?php echo wp_get_current_user()->display_name; ?></h6>
-		                                                <p><?php echo wp_get_current_user()->user_email ?></p>
+		                                                <h6><?php echo 'User : ' .  wp_get_current_user()->display_name; ?></h6>
+		                                              	<!-----  <p><?php echo wp_get_current_user()->user_email ?></p>--->
+													 <div class="balance-in-navbar">
+						<?php $price = get_user_meta( get_current_user_id(), 'wallet_balance' , true );
+						
+						if (class_exists( 'WooCommerce' )) {
+                            echo 'Wallet : '. wc_price($price);
+                        } ?>
+                    </div>
+														<!-----------balance here-------------->
 		                                            </div>
 		                                        </div>
 	                                            <ul class="list-unstyled">
-	                                            	<?php if (function_exists('prolancer_get_page_url_by_template')) { ?>
-	                                                <li><a href="#" class="profile-switcher" data-visit-as="seller"  data-nonce="<?php echo wp_create_nonce('profile_switcher'); ?>"><?php echo esc_html__( 'Visit as Seller', 'prolancer' ); ?></a></li>
-	                                                <li><a href="#" class="profile-switcher" data-visit-as="buyer"  data-nonce="<?php echo wp_create_nonce('profile_switcher'); ?>"><?php echo esc_html__( 'Visit as Buyer', 'prolancer' ); ?></a></li>
-	                                            	<?php } ?>
-	                                                <li><a href="<?php echo esc_url( wp_logout_url() ); ?>"><?php echo esc_html__( 'Logout','prolancer' ) ?></a></li>
-	                                            </ul>
+    <?php if (function_exists('prolancer_get_page_url_by_template')) { 
+        $seller_url = prolancer_get_page_url_by_template('prolancer-dashboard.php') . '=profile';
+        $buyer_url = prolancer_get_page_url_by_template('prolancer-dashboard.php') . '=profile';
+    ?>
+        <li>
+            <a href="<?php echo esc_url($seller_url); ?>">
+                <?php echo esc_html__('Visit as Seller', 'prolancer'); ?>
+            </a>
+        </li>
+        <li>
+            <a href="<?php echo esc_url($buyer_url); ?>">
+                <?php echo esc_html__('Visit as Buyer', 'prolancer'); ?>
+            </a>
+        </li>
+    <?php } ?>
+    <li>
+                             <a href="<?php echo esc_url( wp_logout_url( home_url( '/' ) ) ); ?>">
+			<?php echo esc_html__( 'Logout', 'prolancer' ); ?>
+		</a>
+    </li>
+</ul>
+
+
 
 		                                    <?php } else { ?>
 
 		                                        <div class="header-profile-login">
 		                                            <h6 class="text-center"><?php echo esc_html__( 'Log In to Your Account', 'prolancer' ) ?></h6>
 		                                            <?php wp_login_form(); ?>
-		                                            <a href="<?php echo esc_url( wp_registration_url() ); ?>"><?php esc_html_e( 'Register', 'prolancer' ); ?></a>
+		                                            <a href="https://www.valhallabazaar.net/login-and-register/?tab=register"><?php esc_html_e( 'Register', 'prolancer' ); ?></a>
 		                                            <span class="mr-2 ml-2">|</span>
 		                                            <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>">
 		                                                <?php esc_html_e( 'Lost password', 'prolancer' ); ?>
@@ -157,6 +266,8 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		                        </div>
 		                    </div>
 		                </div>
+						
+						<!-----here notification ----->
 		            </div>
 		        </div>
 		    </div>
@@ -176,7 +287,7 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 		                    </div>
 	            		</div>
 	            	<?php } ?>	            	
-	                <div class="<?php if (function_exists('prolancer_get_page_url_by_template') & $header_style == 'style1' & $prolancer_navbar_button == true) { 
+	               <!-- <div class="<?php if (function_exists('prolancer_get_page_url_by_template') & $header_style == 'style1' & $prolancer_navbar_button == true) { 
 	                		echo'col-xl-7 col-md-7'; 
 	                	} elseif(function_exists('prolancer_get_page_url_by_template') & $header_style == 'style1' & $prolancer_navbar_button !== true) { 
 	                		echo'col-xl-9 col-md-9'; 
@@ -197,7 +308,7 @@ $visit_as = get_user_meta( get_current_user_id(), 'visit_as' , true );
 	                            ) ); ?>
 	                        </nav>                      
 	                    </div>
-	                </div>
+	                </div>-->
 	                <?php if (true == $prolancer_navbar_button){ ?>
 	                <div class="col-xl-2 col-md-2 my-auto">
 	                	<?php if (function_exists('prolancer_get_page_url_by_template')) { ?>
